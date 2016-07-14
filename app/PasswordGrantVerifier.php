@@ -2,22 +2,22 @@
 
 namespace App;
 
-use Illuminate\Support\Facades\Auth;
+use App\User;
 
 class PasswordGrantVerifier
 {
-  public function verify($username, $password)
-  {
-      $credentials = [
-        'email'    => $username,
-        'password' => $password,
-      ];
+    public function verify($username, $password)
+    {
+        $credentials = [
+            'email' => $username,
+            'password' => $password,
+        ];
 
-//      if(Auth::viaRequest('api', function() use($credentials) {
-         $user =  \App\User::where($credentials)->first();
-	if($user){ return $user; }
-  //    }));
+        $user = User::where($credentials)->first();
+        if ($user) {
+            return $user;
+        }
 
-      return false;
-  }
+        return false;
+    }
 }
