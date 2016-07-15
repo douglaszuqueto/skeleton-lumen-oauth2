@@ -14,8 +14,8 @@
     secret: secret
     name: lumen_oauth2
     ```
+    
 ## Rodando o Projeto
-
  * Rode o projeto usando o CLI do PHP: **php -S seuIP:suaPorta -t ./public**
 
 ## Testando
