@@ -1,9 +1,7 @@
 # Simples arquitetura utilizando Lumen 5.2 e OAuth2
 
-## Instalação
- * composer create-project douglaszuqueto/skeleton-lumen-oauth2
-
-## Rodando o Projeto
+## Instalação e Configuração
+ * Crie o projeto utilizando o composer: **composer create-project douglaszuqueto/skeleton-lumen-oauth2**
  * Entre na pasta do projeto criado: **cd skeleton-lumen-oauth2**
  * Crie o arquivo .env: **cp .env.example .env** e configure o arquivo de acordo com suas configurações
  * Execute as migrations: **php artisan migrate**
@@ -16,6 +14,8 @@
     secret: secret
     name: lumen_oauth2
     ```
+## Rodando o Projeto
+
  * Rode o projeto usando o CLI do PHP: **php -S seuIP:suaPorta -t ./public**
 
 ## Testando
