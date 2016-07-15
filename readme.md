@@ -4,7 +4,18 @@
  * composer create-project douglaszuqueto/skeleton-lumen-oauth2
 
 ## Rodando o Projeto
- * cd skeleton-lumen-oauth2
+ * Entre na pasta do projeto criado: **cd skeleton-lumen-oauth2**
+ * Crie o arquivo .env: **cp .env.example .env** e configure o arquivo de acordo com suas configurações
+ * Execute as migrations: **php artisan migrate**
+ * No seu banco de dados:
+  * Vá na tabela **users**, e crie seu usuário
+  * Vá na tabela **oauth_clients** e crie um cliente. Veja no exemplo abaixo:
+    
+    ```
+    id: app,
+    secret: secret
+    name: lumen_oauth2
+    ```
  * php -S seuIP:suaPorta -t ./public
 
 ## Testando
