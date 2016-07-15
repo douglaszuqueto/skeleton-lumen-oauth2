@@ -16,7 +16,7 @@
     secret: secret
     name: lumen_oauth2
     ```
- * php -S seuIP:suaPorta -t ./public
+ * Rode o projeto usando o CLI do PHP: **php -S seuIP:suaPorta -t ./public**
 
 ## Testando
  * Para testar o projeto, recomendo o uso do [Postman](https://www.getpostman.com/) e se baseie nos recursos relatados no tópico abaixo.
